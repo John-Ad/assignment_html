@@ -1,0 +1,32 @@
+#foodDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    row-gap: 2px;
+    column-gap: 2px;
+}
+    .foodItem{
+        text-align: center;
+        border: 1px solid black;
+    }
+    .itemTitle{
+        height: 40px;
+        margin: auto;
+        margin-top: 1px;
+        padding-top: 10px;
+        background-color: rgb(20, 20, 20);
+        color: white;
+    }
+    .itemDesc{
+        margin: auto;
+
+        background-color: rgb(40, 40, 40);
+
+        padding-top: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        color: white;
+        height: 100px;
+    }
