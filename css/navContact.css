@@ -9,7 +9,7 @@
     background-color: rgb(10, 10, 10);
 }
     #navBarImg{
-        background-image: url(pictures/placeholder.png);
+        background-image: url(../pictures/placeholder.png);
         margin-top: 4px;
         width: 100px;
         overflow: hidden;
