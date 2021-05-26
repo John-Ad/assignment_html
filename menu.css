@@ -1,7 +1,28 @@
+#menuDesc{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 70%;
+    border-bottom: 1px solid black;
+}
+
+.menuTitle{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
 #foodDiv{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
 
     row-gap: 2px;
     column-gap: 2px;
@@ -30,3 +51,53 @@
         color: white;
         height: 100px;
     }
+
+#drinkListDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 70%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
+    height: min-content;
+
+    border: 1px solid black;
+
+    column-gap: 2px;
+    row-gap: 2px;
+}
+    
+    #coldDrinksHead{
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+    }
+    #hotDrinksHead{
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+    }
+    .drinks{
+        background-color: rgb(50, 50, 50);
+        border: 1px solid black;
+
+        height: 86%;
+        color: white;
+    }
+
+    #coldDrinks{
+        text-align: center;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #hotDrinks{
+        text-align: center;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+li{
+    margin-top: 10px;
+}

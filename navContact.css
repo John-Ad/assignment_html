@@ -1,0 +1,31 @@
+/* nav bar */
+#navBarDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    height: 55px;
+
+    background-color: rgb(10, 10, 10);
+}
+    #navBarImg{
+        background-image: url(pictures/placeholder.png);
+        margin-top: 4px;
+        width: 100px;
+        overflow: hidden;
+    }
+    /* nav bar items */
+    .navItems{
+        color: white;
+    }
+
+#contactInfoDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: rgb(30, 30, 30);
+    color: white;
+
+    margin-bottom: 10px;
+}

@@ -3,29 +3,8 @@
     justify-content: center;
     background-color:white;
     width: 100%;
-    height: 100%;
+    height: 1fr;
 } 
-    /* nav bar */
-    #navBarDiv{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        
-        height: 55px;
-
-        background-color: rgb(10, 10, 10);
-    }
-        #navBarImg{
-            background-image: url(pictures/placeholder.png);
-            margin-top: 4px;
-            width: 100px;
-            overflow: hidden;
-        }
-        /* nav bar items */
-        .navItems{
-            color: white;
-        }
-    
     /* main content */
     #mainContentDiv{
         display: flex;
@@ -34,12 +13,27 @@
         margin-top: 2px;
 
         width: 100%;
-        height: 100%;
+        height: max-content;
 
         background-color: white;
 
     }
+        .line{
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 1px solid black;
+        }
         /* main content */
+        #mainTitle{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            font-size: xx-large;
+            font-family: 'Courier New', Courier, monospace;
+        }
         #busStatementDiv{
             display: flex;
             flex-direction: column;
@@ -59,6 +53,8 @@
         }
             #statementTitle{
                 margin-bottom: -7px;
+                font-size: large;
+                font-family: 'Courier New', Courier, monospace;
             }
             #statement{
                 margin-left: auto;
@@ -73,40 +69,85 @@
 
             margin-left: auto;
             margin-right: auto;
+            margin-top: 5px;
+
+            padding-bottom: 20px;
 
             width: 90%;
-            height: 120px;
+            height: fit-content;
 
-            margin-top: 5px;
-            background-color: white;
+            background-color: rgb(50, 50, 50);
 
-            border-bottom: 1px solid black;
+
+            border: 1px solid black;
         }
             #foodImg1{
                 grid-column: 1;
                 background-image: url(pictures/item1.jpg);
                 width: 100%;
+                height: 160px;
             }
             #foodImg2{
                 grid-column: 2;
                 background-image: url(pictures/item2.jpg);
                 width: 100%;
+                height: 160px;
             }
             #foodImg3{
                 grid-column: 3;
                 background-image: url(pictures/item3.jpg);
                 width: 100%;
+                height: 160px;
+            }
+            #foodDesc{
+                grid-column: 1/4;
+                text-align: center;
+                color: white;
+
+                margin-left: auto;
+                margin-right: auto;
+                border-top: 1px solid white;
+
+                width: 50%;
+                height: 20px;
+                font-size: large;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #foodMenuLink{
+                color: wheat;
             }
         
-        
-            
-    #contactInfoDiv{
+    #locDescContainer{
         display: flex;
         flex-direction: column;
         text-align: center;
-
-        background-color: rgb(30, 30, 30);
-        color: white;
-
-        margin-bottom: 10px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
+        #locDescHead{
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+            height: 10px;
+        }
+        #locDescDiv{
+            width: 100%;
+            height: 60px;
+            background-color: rgb(50, 50, 50);
+        }
+            #locDesc{
+                margin: auto;
+                margin-left: auto;
+                margin-right: auto;
+                color: white;
+                font-size: medium;
+                font-family: 'Courier New', Courier, monospace;
+                padding-top: 10px;
+                width: 50%;
+            }
+                #storeLink{
+                    color: wheat;
+                }
+        
+            
+
